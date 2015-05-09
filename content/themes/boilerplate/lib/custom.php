@@ -6,7 +6,7 @@
 // if ( !function_exists( 'register_custom_post_types' ) ) :
 //   function register_custom_post_types () {
 
-    // Stub
+    // Stub Custom Post Type
     // $labels = array(
     //   'name'               => _x( 'Stub', 'post type general name' ),
     //   'singular_name'      => _x( 'Stub', 'post type singular name' ),
@@ -50,7 +50,7 @@
 
 //   function register_custom_taxonomies () {
 
-  //   // Story Tags
+  //   // Stub Custom Taxonomy
   //   register_taxonomy(
   //     'tags', 'Stub',
   //     array(
