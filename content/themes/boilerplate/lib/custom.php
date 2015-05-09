@@ -3,10 +3,10 @@
 //
 // Custom Post Types
 //
-if ( !function_exists( 'register_custom_post_types' ) ) :
-  function register_custom_post_types () {
+// if ( !function_exists( 'register_custom_post_types' ) ) :
+//   function register_custom_post_types () {
 
-    // Stub
+    // Stub Custom Post Type
     // $labels = array(
     //   'name'               => _x( 'Stub', 'post type general name' ),
     //   'singular_name'      => _x( 'Stub', 'post type singular name' ),
@@ -36,21 +36,21 @@ if ( !function_exists( 'register_custom_post_types' ) ) :
     // );
 
     // register_post_type( 'stub', $args );
-  }
+  // }
 
-endif;
+// endif;
 
-add_action( 'init', 'register_custom_post_types' );
+// add_action( 'init', 'register_custom_post_types' );
 
 
 //
 // Custom Taxonomies
 //
-if ( !function_exists( 'register_custom_taxonomies' ) ) :
+// if ( !function_exists( 'register_custom_taxonomies' ) ) :
 
-  function register_custom_taxonomies () {
+//   function register_custom_taxonomies () {
 
-  //   // Story Tags
+  //   // Stub Custom Taxonomy
   //   register_taxonomy(
   //     'tags', 'Stub',
   //     array(
@@ -72,8 +72,8 @@ if ( !function_exists( 'register_custom_taxonomies' ) ) :
   //     )
   //   );
 
-  }
+//   }
 
-endif;
+// endif;
 
-add_action( 'init', 'register_custom_taxonomies' );
+// add_action( 'init', 'register_custom_taxonomies' );
