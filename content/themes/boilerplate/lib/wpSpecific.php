@@ -71,3 +71,9 @@ if ( $theme_config['enable_emojis'] === false ) {
   remove_action( 'wp_print_styles', 'print_emoji_styles' );
   remove_action( 'admin_print_styles', 'print_emoji_styles' );
 }
+
+// Remove RSS Links
+if ( $theme_config['enable_emojis'] === false ) {
+  remove_action( 'wp_head', 'rsd_link' );
+  remove_action( 'wp_head', 'wlwmanifest_link' );
+}

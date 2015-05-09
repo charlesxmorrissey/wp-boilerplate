@@ -15,6 +15,7 @@ $theme_config = array(
   'enable_editor_styles'     => false,
   'enable_wp_generator'      => false,
   'enable_admin_menu_items'  => false,
+  'enable_rss_links'         => false,
   'enable_emojis'            => false
 );
 
