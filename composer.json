@@ -1,0 +1,34 @@
+{
+  "name": "charlesxmorrissey/wordpress-boilerplate",
+  "type": "project",
+  "description": "Wordpress boilerplate using composer",
+  "authors": [
+    {
+      "name": "Charles X. Morrissey",
+      "email": "me@charles-x.com",
+      "homepage": "http://work.charles-x.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type":"composer",
+      "url":"http://wpackagist.org"
+    }
+  ],
+  "config": {
+    "vendor-dir": "content/vendor"
+  },
+  "require": {
+    "php": ">=5.3",
+    "johnpbloch/wordpress": "4.*",
+    "composer/installers": "~1.0",
+    "vlucas/phpdotenv": "1.*"
+  },
+  "extra": {
+    "installer-paths": {
+      "content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "content/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "wp"
+  }
+}

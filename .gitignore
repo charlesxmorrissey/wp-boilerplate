@@ -1,0 +1,24 @@
+# WordPress
+wp
+
+# Composer
+composer.lock
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Application
+content/plugins
+content/uploads
+
+# Vendor (e.g. Composer)
+content/vendor
+!vendor/.gitkeep
+
+# Node Package Manager
+node_modules
+
+# Sass Cache
+*.sass-cache
