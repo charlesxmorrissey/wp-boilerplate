@@ -36,12 +36,12 @@ if ( $theme_config['enable_editor_styles'] === true ) {
 }
 
 // Remove WP version from header
-if ( $theme_config['remove_wp_generator'] === true ) {
+if ( $theme_config['enable_wp_generator'] === false ) {
   remove_action( 'wp_head', 'wp_generator' );
 }
 
 // Remove unwanted pages from admin menu
-if ( $theme_config['remove_admin_menu_items'] === true ) {
+if ( $theme_config['enable_admin_menu_items'] === false ) {
   function remove_admin_menu_items() {
     global $menu;
     $remove_menu_items = array( __('Comments'), __('Links'), __('Posts') );
@@ -62,4 +62,12 @@ if ( $theme_config['remove_admin_menu_items'] === true ) {
 
   add_action( 'admin_menu', 'remove_admin_menu_items' );
   add_action( 'wp_before_admin_bar_render', 'remove_admin_bar_links' );
+}
+
+// Remove emojis introduced in WP 4.2
+if ( $theme_config['enable_emojis'] === false ) {
+  remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+  remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
+  remove_action( 'wp_print_styles', 'print_emoji_styles' );
+  remove_action( 'admin_print_styles', 'print_emoji_styles' );
 }

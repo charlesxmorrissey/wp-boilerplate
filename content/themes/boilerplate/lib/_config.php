@@ -13,12 +13,12 @@ $theme_config = array(
   'enable_theme_editor'      => false,
   'enable_admin_bar'         => false,
   'enable_editor_styles'     => false,
-  'remove_wp_generator'      => true,
-  'remove_admin_menu_items'  => true,
-  'seo_opengraph_image_size' => true
+  'enable_wp_generator'      => false,
+  'enable_admin_menu_items'  => false,
+  'enable_emojis'            => false
 );
 
-// Constants
+// Path Constants
 define( 'THEME_ROOT', get_template_directory_uri() . '/' );
 define( 'PUBLIC_DIR', THEME_ROOT . 'dist/' );
 define( 'STYLES_DIR', PUBLIC_DIR . 'styles/' );

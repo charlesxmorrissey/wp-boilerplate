@@ -3,8 +3,8 @@
 //
 // Custom Post Types
 //
-if ( !function_exists( 'register_custom_post_types' ) ) :
-  function register_custom_post_types () {
+// if ( !function_exists( 'register_custom_post_types' ) ) :
+//   function register_custom_post_types () {
 
     // Stub
     // $labels = array(
@@ -36,19 +36,19 @@ if ( !function_exists( 'register_custom_post_types' ) ) :
     // );
 
     // register_post_type( 'stub', $args );
-  }
+  // }
 
-endif;
+// endif;
 
-add_action( 'init', 'register_custom_post_types' );
+// add_action( 'init', 'register_custom_post_types' );
 
 
 //
 // Custom Taxonomies
 //
-if ( !function_exists( 'register_custom_taxonomies' ) ) :
+// if ( !function_exists( 'register_custom_taxonomies' ) ) :
 
-  function register_custom_taxonomies () {
+//   function register_custom_taxonomies () {
 
   //   // Story Tags
   //   register_taxonomy(
@@ -72,8 +72,8 @@ if ( !function_exists( 'register_custom_taxonomies' ) ) :
   //     )
   //   );
 
-  }
+//   }
 
-endif;
+// endif;
 
-add_action( 'init', 'register_custom_taxonomies' );
+// add_action( 'init', 'register_custom_taxonomies' );
