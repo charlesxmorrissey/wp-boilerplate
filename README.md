@@ -8,7 +8,7 @@
   * `DB_NAME` - Database name
   * `DB_USER` - Database user
   * `DB_PASSWORD` - Database password
-  * `DB_HOST` - Database host (defaults to `localhost`)
+  * `DB_HOST` - Database host
   * `WP_ENV` - Set to environment (`development`, `staging`, `production`, etc)
   * `WP_HOME` - Full URL to WordPress home (http://example.com)
   * `WP_SITEURL` - Full URL to WordPress including subdirectory (http://example.com/wp)
