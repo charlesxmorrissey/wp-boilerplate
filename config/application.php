@@ -19,6 +19,10 @@ if (file_exists($env_config)) {
   require_once $env_config;
 }
 
+// Define URLs
+define('WP_HOME', getenv('WP_HOME'));
+define('WP_SITEURL', getenv('WP_SITEURL'));
+
 // Custom Content Directory
 define( 'CONTENT_PATH', '/content' );
 define( 'WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . CONTENT_PATH );
@@ -27,12 +31,13 @@ define( 'WP_PLUGIN_DIR', $_SERVER['DOCUMENT_ROOT'] . CONTENT_PATH . '/plugins' )
 define( 'WP_PLUGIN_URL', WP_HOME . CONTENT_PATH . '/plugins');
 
 // DB settings
+define('DB_NAME', getenv('DB_NAME'));
+define('DB_USER', getenv('DB_USER'));
+define('DB_PASSWORD', getenv('DB_PASSWORD'));
+define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
 define('DB_CHARSET', 'utf8');
 define('DB_COLLATE', '');
-$table_prefix = getenv('DB_PREFIX') ? getenv('DB_PREFIX') : 'wp_';
-
-// Limit post revisions
-define( 'WP_POST_REVISIONS', 2 );
+$table_prefix = getenv('DB_PREFIX') ?: 'wp_';
 
 // Authentication Unique Keys and Salts
 define( 'AUTH_KEY',         getenv('AUTH_KEY') );
@@ -48,6 +53,7 @@ define( 'NONCE_SALT',       getenv('NONCE_SALT') );
 define( 'AUTOMATIC_UPDATER_DISABLED', true );
 define( 'DISABLE_WP_CRON', true );
 define( 'DISALLOW_FILE_EDIT', true );
+define( 'WP_POST_REVISIONS', 2 );
 
 // Bootstrap WordPress
 if ( !defined( 'ABSPATH' ) ) {
