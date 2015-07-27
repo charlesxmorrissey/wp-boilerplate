@@ -11,6 +11,7 @@ composer.lock
 
 # Application
 content/plugins
+!content/plugins/wpb-functionality
 content/uploads
 
 # Vendor (e.g. Composer)

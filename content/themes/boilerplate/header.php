@@ -14,4 +14,4 @@
     <?php wp_head(); ?>
   </head>
 
-  <body data-behavior="stub">
+  <body class="<?php echo body_classes(); ?>" data-behavior="stub">
