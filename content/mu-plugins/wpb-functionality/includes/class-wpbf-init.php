@@ -22,6 +22,7 @@ class WPBF_Init {
     $add_mime_types      = new WPBF_Add_Mime_Types();
     $admin_features      = new WPBF_Admin_Features();
     $asset_helpers       = new WPBF_Asset_Helpers();
+    $ajax_helpers        = new WPBF_Ajax_Helpers();
   }
 
 }

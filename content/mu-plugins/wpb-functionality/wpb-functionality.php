@@ -115,6 +115,7 @@ if (!class_exists('WPBF')) {
       require_once WPBF_PLUGIN_DIR . 'includes/class-wpbf-add-mime-types.php';
       require_once WPBF_PLUGIN_DIR . 'includes/class-wpbf-admin-features.php';
       require_once WPBF_PLUGIN_DIR . 'includes/class-wpbf-asset-helpers.php';
+      require_once WPBF_PLUGIN_DIR . 'includes/class-wpbf-ajax-helpers.php';
 
       require_once WPBF_PLUGIN_DIR . 'includes/class-wpbf-init.php';
     }
