@@ -20,8 +20,8 @@ if (file_exists($env_config)) {
 }
 
 // Define URLs
-define('WP_HOME', getenv('WP_HOME'));
-define('WP_SITEURL', getenv('WP_SITEURL'));
+define( 'WP_HOME', getenv('WP_HOME') );
+define( 'WP_SITEURL', getenv('WP_SITEURL') );
 
 // Custom Content Directory
 define( 'CONTENT_PATH', '/content' );
@@ -54,6 +54,7 @@ define( 'AUTOMATIC_UPDATER_DISABLED', true );
 define( 'DISABLE_WP_CRON', true );
 define( 'DISALLOW_FILE_EDIT', true );
 define( 'WP_POST_REVISIONS', 2 );
+define( 'WP_DEFAULT_THEME', 'boilerplate' );
 
 // Bootstrap WordPress
 if ( !defined( 'ABSPATH' ) ) {
