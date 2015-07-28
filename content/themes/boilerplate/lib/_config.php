@@ -24,14 +24,14 @@ define('VENDOR_SCRIPTS_DIR', THEME_ROOT . 'dist/javascripts/vendors/');
 /**
  * Enable image sizes
  */
-if ( $theme_config['enable_image_sizes'] === true ) {
+if ($theme_config['enable_image_sizes'] === true) {
   // Image sizes
-  // add_image_size( 'size-name', 600, 315, true );
+  // add_image_size('size-name', 600, 315, true);
 }
 
 /**
  * Enable Editor Styles
  */
-if ( $theme_config['enable_editor_styles'] === true ) {
-  add_editor_style( 'src/css/editor-style.css' );
+if ($theme_config['enable_editor_styles'] === true) {
+  add_editor_style('src/css/editor-style.css');
 }
