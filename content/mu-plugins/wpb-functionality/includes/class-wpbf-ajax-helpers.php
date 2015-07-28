@@ -16,19 +16,19 @@ class WPBF_Ajax_Helpers {
    * Initialize the class
    */
   public function __construct() {
-    // add_filter('upload_mimes', array($this, 'add_svg'));
+    // add_action('init', array($this, 'is_ajax_request'));
   }
 
   /**
-     * Add SVG mime type
+     * Returns true if the request is a XMLHttpRequest.
      *
      * @since  1.0.0
      * @access public
      * @return void
      */
-  // public function add_svg($mimes) {
-  //   $mimes['svg'] = 'image/svg+xml';
-  //   return $mimes;
-  // }
+  public function is_ajax_request() {
+    $headers = $_SERVER;
+    return isset($headers['HTTP_X_REQUESTED_WITH']) && $headers['HTTP_X_REQUESTED_WITH'] == "XMLHttpRequest";
+  }
 
 }
