@@ -11,7 +11,7 @@
  * @wordpress-plugin
  * Plugin Name:       WP Boilerplate Functionality
  * Plugin URI:        https://github.com/charlesxmorrissey/wp-boilerplate
- * Description:       Custom functionality plugin for wp-boilerplate
+ * Description:       Plugin for commonly used functions
  * Version:           1.0.0
  * Author:            Charles X. Morrissey
  * Author URI:        http://work.charles-x.com
@@ -109,8 +109,6 @@ if (!class_exists('WPBF')) {
      * @return void
      */
     private function includes() {
-      $includes_path = plugin_dir_path(__FILE__) . 'includes/';
-
       require_once WPBF_PLUGIN_DIR . 'includes/class-wpbf-register-post-types.php';
       require_once WPBF_PLUGIN_DIR . 'includes/class-wpbf-register-taxonomies.php';
       require_once WPBF_PLUGIN_DIR . 'includes/class-wpbf-clean-up-head.php';
