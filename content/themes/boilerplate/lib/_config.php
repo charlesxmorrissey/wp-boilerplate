@@ -7,8 +7,10 @@
  * as well as deciding some custom function support stuff too.
  */
 $theme_config = array(
-  'enable_image_sizes'   => true,
-  'enable_editor_styles' => false,
+  'enable_image_sizes'       => true,
+  'enable_wp_title_tag'      => true,
+  'enable_editor_styles'     => false,
+  'enable_custom_permalinks' => true,
 );
 
 /**
@@ -30,8 +32,30 @@ if ($theme_config['enable_image_sizes'] === true) {
 }
 
 /**
- * Enable Editor Styles
+ * Let WordPress manage the document title.
+ * By adding theme support, we declare that this theme does not use a
+ * hard-coded <title> tag in the document head, and expect WordPress to
+ * provide it for us.
+ */
+if ($theme_config['enable_wp_title_tag'] === true) {
+  add_theme_support( 'title-tag' );
+}
+
+/**
+ * Enable editor etyles
  */
 if ($theme_config['enable_editor_styles'] === true) {
   add_editor_style('src/css/editor-style.css');
+}
+
+/**
+ * Enable custom permalinks
+ */
+if ($theme_config['enable_custom_permalinks'] === true) {
+  function enable_custom_permalinks() {
+    global $wp_rewrite;
+    $wp_rewrite->set_permalink_structure('/%postname%/');
+    // $wp_rewrite->flush_rules();
+  }
+  add_action('init', 'enable_custom_permalinks');
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title><?php wp_title(''); ?></title>
+    <title><?php wp_title( '|', true, 'right' ); ?></title>
 
     <link rel="stylesheet" href="<?php print STYLES_DIR . 'main.css'; ?>">
 
