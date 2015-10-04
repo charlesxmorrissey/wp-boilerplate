@@ -26,9 +26,22 @@
   },
   "extra": {
     "installer-paths": {
+      "content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
       "content/plugins/{$name}/": ["type:wordpress-plugin"],
       "content/themes/{$name}/": ["type:wordpress-theme"]
     },
     "wordpress-install-dir": "wp"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "cp wp-config.example.php wp/wp-config.php",
+      "mkdir -p content/uploads && chmod 777 content/uploads"
+    ],
+    "post-update-cmd": [
+      "cp wp-config.example.php wp/wp-config.php"
+    ],
+    "post-create-project-cmd": [
+      "cp wp-config.example.php wp/wp-config.php"
+    ]
   }
 }
