@@ -180,4 +180,4 @@ function WPBF_Run() {
   return WPBF::instance();
 }
 
-WPBF_Run();
+// WPBF_Run();
