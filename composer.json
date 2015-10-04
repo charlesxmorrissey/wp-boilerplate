@@ -34,7 +34,8 @@
   },
   "scripts": {
     "post-install-cmd": [
-      "cp wp-config.example.php wp/wp-config.php"
+      "cp wp-config.example.php wp/wp-config.php",
+      "mkdir -p content/uploads && chmod 777 content/uploads"
     ],
     "post-update-cmd": [
       "cp wp-config.example.php wp/wp-config.php"
