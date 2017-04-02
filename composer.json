@@ -12,17 +12,18 @@
   "repositories": [
     {
       "type":"composer",
-      "url":"http://wpackagist.org"
+      "url":"https://wpackagist.org"
     }
   ],
   "config": {
+    "secure-http": false,
     "vendor-dir": "content/vendor"
   },
   "require": {
     "php": ">=5.3",
-    "johnpbloch/wordpress": "4.*",
     "composer/installers": "~1.0",
-    "vlucas/phpdotenv": "1.*"
+    "vlucas/phpdotenv": "1.*",
+    "johnpbloch/wordpress": "^4.7"
   },
   "extra": {
     "installer-paths": {
