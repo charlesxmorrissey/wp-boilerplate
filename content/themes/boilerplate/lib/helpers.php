@@ -9,6 +9,7 @@
  */
 function getPageBySlug($name) {
   $link = get_page_by_path($name);
+
   return get_permalink($link->ID);
 }
 
@@ -17,7 +18,11 @@ function getPageBySlug($name) {
  */
 function isPostType($type) {
   global $post;
-  if ($type == get_post_type()) return true;
+
+  if ($type == get_post_type()) {
+    return true
+  };
+
   return false;
 }
 
