@@ -54,8 +54,8 @@ if ($theme_config['enable_editor_styles'] === true) {
 if ($theme_config['enable_custom_permalinks'] === true) {
   function enable_custom_permalinks() {
     global $wp_rewrite;
+
     $wp_rewrite->set_permalink_structure('/%postname%/');
-    // $wp_rewrite->flush_rules();
   }
   add_action('init', 'enable_custom_permalinks');
 }
