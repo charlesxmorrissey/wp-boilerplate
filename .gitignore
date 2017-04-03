@@ -22,3 +22,6 @@ node_modules
 
 # Sass Cache
 *.sass-cache
+
+# Compiled files
+dist

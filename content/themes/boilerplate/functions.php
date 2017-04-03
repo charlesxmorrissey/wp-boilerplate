@@ -9,7 +9,6 @@ if (!function_exists( 'boilerplate_setup')) :
   function boilerplate_setup () {
     require_once('lib/_config.php');
     require_once('lib/helpers.php');
-    require_once('lib/bodyClasses.php');
   }
 endif;
 

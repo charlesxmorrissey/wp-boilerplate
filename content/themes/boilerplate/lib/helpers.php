@@ -20,17 +20,8 @@ function isPostType($type) {
   global $post;
 
   if ($type == get_post_type()) {
-    return true
-  };
+    return true;
+  }
 
   return false;
-}
-
-/**
- * Debug
- */
-function debugger($obj) {
-  echo "<pre>\n";
-  print_r($obj);
-  echo "\n</pre>";
 }
